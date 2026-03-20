@@ -1,6 +1,6 @@
-# 🔒 **ERROR ENCRYPTOR**
+# 🔒 **ERROR ENCRYPTOR TOOL**
 
-### *Python Code Protector*
+### *Complete Python & HTML Code Protection Suite*
 
 <div align="center">
   <img src="https://iili.io/qEHckKv.webp" alt="ERROR ENCRYPTOR Logo" width="250"/>
@@ -17,13 +17,11 @@
 
 ## 📋 **TABLE OF CONTENTS**
 - [📌 Basic Info](#-basic-info)
-- [🎯 What It Does](#-what-it-does)
-- [💻 Platform Support](#-platform-support)
-- [🚀 Quick Start](#-quick-start)
-- [📦 Installation Methods](#-installation-methods)
-- [⚙️ How to Use](#️-how-to-use)
-- [📁 File Specifications](#-file-specifications)
-- [⚙️ Options](#️-options)
+- [📁 File Structure](#-file-structure)
+- [🚀 Installation](#-installation)
+- [🎯 Features](#-features)
+- [💻 How to Use](#-how-to-use)
+- [📊 File Size Guide](#-file-size-guide)
 - [⚠️ Disclaimer](#️-disclaimer)
 - [📞 Contact](#-contact)
 
@@ -33,9 +31,8 @@
 
 | Field | Details |
 |-------|---------|
-| **Name** | ERROR ENCRYPTOR |
-| **Version** | 11.0 |
-| **Type** | Python Code Protector |
+| **Name** | ERROR ENCRYPTOR TOOL |
+| **Version** | 2.0 |
 | **Developer** | @ERROR0101risback |
 | **Channel** | https://t.me/aab_ho_ga_comeback |
 | **Language** | Python 3.6+ |
@@ -43,133 +40,85 @@
 
 ---
 
-## 🎯 **WHAT IT DOES**
+## 📁 **FILE STRUCTURE**
 
-**ERROR ENCRYPTOR** protects your Python scripts by converting them into self-executing encrypted files that run automatically. It adds junk code and obfuscation to make your code harder to read while keeping it functional.
-
-### **Key Features:**
-- 🔒 Encrypts Python source code
-- 🌀 Adds junk code chunks for obfuscation
-- ⚡ Self-executing output files
-- 🛡️ Protects your intellectual property
-- 📁 Preserves original functionality
-
----
-
-## 💻 **PLATFORM SUPPORT**
-
-| Platform | Status |
-|----------|--------|
-| Windows | ✅ Full Support |
-| Linux | ✅ Full Support |
-| Termux | ✅ Full Support |
-| macOS | ✅ Full Support |
-| Pydroid 3 | ✅ Full Support |
+```
+ERROR_ENCRYPTOR_TOOL/
+│
+├── main.py                      # Main menu launcher
+├── Error_encryptor.py           # Python code encryptor
+├── Error_html_encryptor.py      # HTML code encryptor
+└── README.md                    # Documentation
+```
 
 ---
 
-## 🚀 **QUICK START**
+## 🚀 **INSTALLATION**
 
 ### **One Command Setup:**
-
 ```bash
 git clone https://github.com/ERROR0101r/Error-python-encryptor.git
 cd Error-python-encryptor
-chmod +x setup.sh
-./setup.sh
+python3 main.py
 ```
 
-### **Direct Run:**
+### **Manual Installation:**
 
+**Termux (Android):**
 ```bash
-python3 Error_Encryptor.py
-```
-
-### **Termux Users:**
-
-```bash
-pkg update && pkg install python -y
+pkg update && pkg upgrade
+pkg install python git
 git clone https://github.com/ERROR0101r/Error-python-encryptor.git
 cd Error-python-encryptor
-python Error_Encryptor.py
+pip install pycryptodome
+python main.py
 ```
 
----
+**Linux (Ubuntu/Debian):**
+```bash
+sudo apt update
+sudo apt install python3 python3-pip git
+git clone https://github.com/ERROR0101r/Error-python-encryptor.git
+cd Error-python-encryptor
+pip3 install pycryptodome
+python3 main.py
+```
 
-## 📦 **INSTALLATION METHODS**
-
-### **Method 1: Git Clone (Recommended)**
-
+**Windows:**
 ```bash
 git clone https://github.com/ERROR0101r/Error-python-encryptor.git
 cd Error-python-encryptor
-chmod +x setup.sh
-./setup.sh
-```
-
-### **Method 2: Direct Download ZIP**
-
-```bash
-wget https://github.com/ERROR0101r/Error-python-encryptor/archive/refs/heads/main.zip
-unzip main.zip
-cd Error-python-encryptor-main
-python3 Error_Encryptor.py
-```
-
-### **Method 3: GitHub Download**
-1. Go to: https://github.com/ERROR0101r/Error-python-encryptor
-2. Click green **"Code"** button
-3. Select **"Download ZIP"**
-4. Extract and run `python3 Error_Encryptor.py`
-
----
-
-## ⚙️ **HOW TO USE**
-
-### **Step 1: Run the Tool**
-```bash
-python3 Error_Encryptor.py
-```
-
-### **Step 2: Enter Input File**
-```
-Enter Python file name: my_script.py
-```
-
-### **Step 3: Set Junk Chunks**
-```
-Enter junk chunks (1-100, default 10): 15
-```
-
-### **Step 4: Get Encrypted Output**
-```
-Output saved as: E_my_script.py
-```
-
-### **Step 5: Run Encrypted File**
-```bash
-python E_my_script.py
+pip install pycryptodome
+python main.py
 ```
 
 ---
 
-## 📁 **FILE SPECIFICATIONS**
+## 🎯 **FEATURES**
 
-| Field | Details |
-|-------|---------|
-| **Input** | Any `.py` file |
-| **Output** | `E_originalname.py` |
-| **Execution** | `python encrypted_file.py` |
-| **Size** | Slightly larger than original |
-| **Functionality** | 100% preserved |
+| Encryptor | Technology | Output |
+|-----------|------------|--------|
+| **Python** | ChaCha20 + XOR + ZLIB | Self-executing `.py` file |
+| **HTML** | AES-256-GCM + ZLIB | Protected `.html` file |
 
 ---
 
-## ⚙️ **OPTIONS**
+## 💻 **HOW TO USE**
 
-| Option | Range | Default | Description |
-|--------|-------|---------|-------------|
-| Junk Chunks | 1-100 | 10 | Number of junk code blocks to add |
+1. Run `python3 main.py`
+2. Select encryptor type (1 or 2)
+3. Enter file path
+4. Set password (if required)
+5. Get encrypted file
+
+---
+
+## 📊 **FILE SIZE GUIDE**
+
+| Encryptor | Original Size | Encrypted Size |
+|-----------|---------------|----------------|
+| **Python** | 1 KB | 50 KB - 5 MB |
+| **HTML** | 1 KB | 100 KB - 8 MB |
 
 ---
 
@@ -186,17 +135,6 @@ By using this tool, you agree that:
 - Use only on your own code or with permission
 
 The author (@ERROR0101risback) does not condone any illegal activities.
-```
-
----
-
-## 📁 **REPOSITORY STRUCTURE**
-
-```
-Error-python-encryptor/
-├── Error_Encryptor.py    # Main encryption tool
-├── setup.sh              # Auto-installer script
-└── README.md             # Documentation
 ```
 
 ---
@@ -225,18 +163,18 @@ Error-python-encryptor/
       <td align="right"><strong>GitHub Profile:</strong></td>
       <td><a href="https://github.com/ERROR0101r">ERROR0101r</a></td>
     </tr>
-    <tr>
+     <tr>
       <td align="right"><strong>Project Repo:</strong></td>
       <td><a href="https://github.com/ERROR0101r/Error-python-encryptor">Error Python Encryptor</a></td>
-    </tr>
-  </table>
+     </tr>
+   </table>
 </div>
 
 ---
 
 ## ⭐ **SUPPORT THE PROJECT**
 
-If you find ERROR ENCRYPTOR useful:
+If you find ERROR ENCRYPTOR TOOL useful:
 - ⭐ **Star** the repository on GitHub
 - 📢 **Share** with your friends
 - 📝 **Join** the [Telegram Channel](https://t.me/aab_ho_ga_comeback)
@@ -248,12 +186,22 @@ If you find ERROR ENCRYPTOR useful:
 
 | Version | Date | Changes |
 |---------|------|---------|
-| 11.0 | March 20, 2026 | Current stable release |
+| 2.0 | March 20, 2026 | Added HTML encryption, improved UI |
+| 1.0 | Previous | Initial release |
+
+---
+
+## 📥 **DIRECT DOWNLOAD**
+
+**Download ZIP:**
+```
+https://github.com/ERROR0101r/Error-python-encryptor/archive/refs/heads/main.zip
+```
 
 ---
 
 <div align="center">
-  <h3>🔒 Protect Your Python Code 🔒</h3>
+  <h3>🔒 Protect Your Code 🔒</h3>
   <p><i>Made with 🔥 by @ERROR0101risback</i></p>
   
   <p>
@@ -264,5 +212,5 @@ If you find ERROR ENCRYPTOR useful:
     <a href="https://github.com/ERROR0101r/Error-python-encryptor/archive/refs/heads/main.zip"><img src="https://img.shields.io/badge/Download-ZIP-brightgreen?style=flat-square&logo=github" alt="Download"></a>
   </p>
   
-  <p>© 2026 ERROR ENCRYPTOR. All rights reserved.</p>
+  <p>© 2026 ERROR ENCRYPTOR TOOL. All rights reserved.</p>
 </div>
